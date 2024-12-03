@@ -1,8 +1,8 @@
-# Используем официальный образ Couchbase
-FROM couchbase:community-7.1.3
+# Используем официальный образ Couchbase Server
+FROM couchbase/server:community-7.1.3
 
-# Указываем порт для подключения к Couchbase
+# Указываем порты, необходимые для работы Couchbase
 EXPOSE 8091 8092 8093 8094 11210
 
-# Устанавливаем рабочую директорию (если нужно)
+# Рабочая директория (опционально)
 WORKDIR /opt/couchbase
